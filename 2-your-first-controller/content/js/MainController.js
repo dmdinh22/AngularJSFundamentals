@@ -3,5 +3,5 @@ function MainController() {
 }
 
 angular
-  .module('app')
-  .controller('MainController', MainController);
+    .module('app')
+    .controller('MainController', MainController);

@@ -5,14 +5,14 @@
   </head>
   <body>
 
-    <div ng-controller="MainController as main">
-      {{ main.name }}
+    <div ng-controller="MainController as mainCtrl">
+      {{ mainCtrl.name }}
     </div>
 
-    <div ng-controller="MainController as main">
+    <div ng-controller="MainController as mainCtrl">
       {{ name }}
-      <div ng-controller="AnotherController as another">
-        {{ another.name }} {{ main.name }}
+      <div ng-controller="AnotherController as anotherCtrl">
+        {{ anotherCtrl.name }} {{ mainCtrl.name }}
       </div>
     </div>
 

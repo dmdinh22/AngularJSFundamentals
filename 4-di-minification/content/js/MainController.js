@@ -1,11 +1,13 @@
 function MainController(a, b) {
-  a.name = 'Todd';
+    a.name = 'David';
 }
 
+// MainController.$inject = ['$scope'];
+
 angular
-  .module('app')
-  .controller('MainController', [
-    '$scope',
-    '$rootScope',
-    MainController
-  ]);
+    .module('app')
+    .controller('MainController', [
+        '$scope',
+        '$rootScope',
+        MainController
+    ]);

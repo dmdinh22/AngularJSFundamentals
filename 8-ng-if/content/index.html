@@ -10,9 +10,9 @@
           <p>{{ movie.title }}</p>
           <p>Released in: {{ movie.year }}</p>
           <p ng-if="movie.popular">This movie is popular!</p>
-          <p ng-if="movie.year > '2000'">
+          <p ng-if="movie.year > '2000'"><!--same outcome as ng-show-->
             This movie is quite new!
-          </p>
+          </p> <!-- ng-if is data bound, destroys element-->
         </li>
       </ul>
     </div>
