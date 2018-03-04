@@ -3,8 +3,8 @@
     <title>My Angular app</title>
     <script src="js/angular.js"></script>
     <style>
-      .old {background: red;}
-      .modern {background: blue;}
+      .old {background: red;} 
+      .modern {background: blue;} 
       .new {background: green;}
     </style>
   </head>
@@ -12,7 +12,11 @@
     <div ng-controller="MoviesController as movies">
       <ul>
         <li
-          ng-class="movie.year < 1995 ? 'old' : 'modern'"
+          ng-class="{
+            old: movie.year < 1995,
+            modern: movie.year > 1995 && movie.year < 2000,
+            new: movie.year > 2000
+          }" 
           ng-repeat="movie in movies.favorites">
           <p>{{ movie.title }}</p>
           <p>Released in: {{ movie.year }}</p>
@@ -24,3 +28,6 @@
     <script src="js/MoviesController.js"></script>
   </body>
 </html>
+
+
+<!-- ternary: ng-class="movie.year < 1995 ? 'old' : 'modern'"-->
