@@ -13,15 +13,15 @@
   </head>
   <body>
     <div ng-controller="MoviesController as movies">
-      <form ng-submit="movies.addMovie();">
+      <form ng-submit="movies.addMovie()">
         <p>
           Add a movie
         </p>
         <input
           type="text"
           placeholder="Title"
-          ng-focus="movies.onFocus();"
-          ng-blur="movies.onBlur();"
+          ng-focus="movies.onFocus()"
+          ng-blur="movies.onBlur()"
           ng-model="movies.newTitle">
         <input
           type="text"

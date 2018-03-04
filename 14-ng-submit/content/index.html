@@ -13,7 +13,7 @@
   </head>
   <body>
     <div ng-controller="MoviesController as movies">
-      <form ng-submit="movies.addMovie();">
+      <form ng-submit="movies.addMovie()"><!--fire this fn on form submit-->
         <p>
           Add a movie
         </p>
@@ -32,7 +32,7 @@
       <ul>
         <li ng-repeat="movie in movies.favorites">
           <p>
-            {{ movie.title }} {{ $index }}
+              {{ $index + 1 }}. {{ movie.title }} 
           </p>
           <p>Released in: {{ movie.year }}</p>
         </li>

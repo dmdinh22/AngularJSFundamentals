@@ -15,13 +15,13 @@
     <div ng-controller="MoviesController as movies">
       <div class="likes">
         <p>
-          Todd's like list
+          Davids Movie Like List
         </p>
         <ul>
           <li ng-repeat="like in movies.likesList">
             <p>{{ like.title }}</p>
-            <a href="" ng-click="movies.unlike($index);">
-              Unlike!
+            <a href="" ng-click="movies.unlike($index)"><!-- pass in index of selected element-->
+              Unlike
             </a>
           </li>
         </ul>
@@ -31,8 +31,8 @@
           <p>
             {{ movie.title }}
           </p>
-          <a href="" ng-click="movies.addToLikes(movie);">
-            Like this movie
+          <a href="" ng-click="movies.addToLikes(movie)">
+            Like this movie!
           </a>
         </li>
       </ul>
