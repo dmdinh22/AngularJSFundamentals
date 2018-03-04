@@ -8,10 +8,19 @@
   </head>
   <body>
     <div ng-controller="MainController as main">
+    <a href="" ng-click="myKey = 'one'">
+      Key one
+    </a>
+    <a href="" ng-click="myKey = 'two'">
+      Key two
+    </a>
+    <p>
+    {{main.myObject[myKey]}}
+    </p>
       <p>
         {{
           main.myArray.length > 0 ?
-          'Something here' :
+          'Something here' : 
           'Nothing here'
         }}
       </p>
