@@ -11,7 +11,7 @@
         ng-model="search">
       <ul>
         <li
-          ng-repeat="movie in movies.favorites | filter: { year: search }">
+          ng-repeat="movie in movies.favorites | filter: search">
           <p>{{ movie.title }}</p>
           <p>Released in: {{ movie.year }}</p>
         </li>

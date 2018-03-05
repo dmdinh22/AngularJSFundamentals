@@ -1,7 +1,7 @@
 function MainController() {
-  this.myAmount = 209.82;
+    this.myAmount = 920.28;
 }
 
 angular
-  .module('app')
-  .controller('MainController', MainController);
+    .module('app')
+    .controller('MainController', MainController);

@@ -1,10 +1,10 @@
 function MainController() {
-  this.person = {
-    name: 'Todd Motto',
-    location: 'England, UK'
-  };
+    this.person = {
+        name: 'David Dinh',
+        location: 'California, United States'
+    };
 }
 
 angular
-  .module('app')
-  .controller('MainController', MainController);
+    .module('app')
+    .controller('MainController', MainController);
