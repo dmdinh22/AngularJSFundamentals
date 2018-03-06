@@ -1,8 +1,8 @@
 function OrderController() {
-  this.orderName = 'Coca-cola';
-  this.orderQuantity = 5;
+    this.orderName = 'Pepsi-Cola';
+    this.orderQuantity = 2;
 }
 
 angular
-  .module('app')
-  .controller('OrderController', OrderController);
+    .module('app')
+    .controller('OrderController', OrderController);

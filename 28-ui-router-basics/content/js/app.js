@@ -1,4 +1,4 @@
 angular
-  .module('app', [
-    'ui.router'
-  ]);
+    .module('app', [
+        'ui.router' // injecting ui-router
+    ]);

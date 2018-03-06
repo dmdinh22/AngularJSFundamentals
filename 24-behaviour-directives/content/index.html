@@ -6,11 +6,11 @@
   </head>
   <body>
     <div>
-      <form ng-submit="user.getUser();">
+      <form ng-submit="user.getUser()">
         <input
           type="text"
           ng-model="user.userId"
-          stretch>
+          stretch><!--custom attr, ng will bind at compile time-->
         <button type="submit">
           Search user
         </button>

@@ -1,7 +1,7 @@
 function AboutController() {
-  this.viewName = 'about view!';
+    this.viewName = 'about view!';
 }
 
 angular
-  .module('app')
-  .controller('AboutController', AboutController);
+    .module('app')
+    .controller('AboutController', AboutController);

@@ -1,18 +1,19 @@
 function stretch() {
-  return {
-    restrict: 'A',
-    link: function ($scope, $element, $attrs) {
-      var element = $element[0];
-      element.addEventListener('focus', function () {
-        this.style.width = '250px';
-      });
-      element.addEventListener('blur', function () {
-        this.style.width = '120px';
-      });
-    }
-  };
+    return {
+        restrict: 'A', // A === attribute, E === element
+        link: function ($scope, $element, $attrs) {
+            var element = $element[0]; // jqlite element -> index 0 === raw DOM element
+            element.addEventListener('focus', function () { // focus listener
+                this.style.width = '250px';
+            });
+            element.addEventListener('blur', function () { // blur listener
+                this.style.width = '120px';
+            });
+        }
+    };
 }
 
 angular
-  .module('app')
-  .directive('stretch', stretch);
+    .module('app')
+    // my-stretch in element -> 'myStretch' in directive param
+    .directive('stretch', stretch);
